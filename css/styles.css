@@ -299,6 +299,13 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   transform: scaleY(0.01) scaleX(0);
   animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+  .modal #next {
+    position: absolute;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: calc(50% - 25px); }
 
 @keyframes unfoldIn {
   0% {
@@ -419,13 +426,15 @@ main .slide {
     main .slide div#text-container h2 {
       text-align: left;
       font-size: 18pt;
-      margin: 0; }
+      margin: 0;
+      line-height: 1.5; }
     main .slide div#text-container h2 span {
+      line-height: 1.5;
       text-transform: uppercase; }
     main .slide div#text-container p {
       text-align: left;
-      font-size: 16pt;
-      line-height: 1.6; }
+      font-size: 15pt;
+      line-height: 1.5; }
       @media (max-width: 800px) {
         main .slide div#text-container p {
           font-size: 13pt !important; } }
@@ -447,15 +456,6 @@ main .slide {
       text-decoration: none;
       border-bottom: 1px solid white;
       cursor: pointer; }
-  main .slide #prev-next-btns {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    position: absolute;
-    bottom: 50px;
-    right: 50px; }
-  main .slide .btn {
-    width: 50px;
-    height: 50px; }
 
 #block-for-slider {
   width: 100%;
