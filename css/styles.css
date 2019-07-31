@@ -282,6 +282,9 @@
       display: none;
       font-size: 0 !important; } }
 
+* {
+  outline: none; }
+
 body {
   font-family: 'Fira Mono', monospace;
   margin: 0;
@@ -338,6 +341,7 @@ body {
   cursor: pointer; }
 
 #header {
+  padding-bottom: 20px;
   background-color: black;
   min-height: 100vh;
   color: #78b2ff;
@@ -355,26 +359,34 @@ body {
   #header h1 {
     text-align: left;
     width: 90%;
-    margin: 5px auto;
+    margin: 5px 5% 5px 5%;
     font-family: 'Roboto', sans-serif;
-    font-size: 0;
+    font-size: 50pt;
     font-weight: normal;
     grid-column: 1/2;
     grid-row: 2/3; }
+    @media (max-width: 1300px) {
+      #header h1 {
+        font-size: 40pt;
+        margin: 25px auto; } }
+    @media (max-width: 1000px) {
+      #header h1 {
+        font-size: 35pt;
+        margin: 25px auto; } }
     @media (max-width: 800px) {
       #header h1 {
         margin: 25px auto; } }
   #header h3 {
     text-align: left;
-    width: 90%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 5px 15% 5px 5%;
     font-size: 20pt;
     font-weight: normal;
     grid-column: 1/2;
     grid-row: 3/4; }
     @media (max-width: 800px) {
       #header h3 {
-        margin: 25px auto; } }
+        margin: 25px 5% 25px 5%; } }
   #header #credits {
     text-align: left;
     width: 90%;
