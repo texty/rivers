@@ -394,7 +394,6 @@ body {
     grid-row: 1/2;
     z-index: 10000; }
   #header #grid {
-    opacity: 0;
     width: 100%;
     margin: auto;
     grid-column: 1/-1;

@@ -66,14 +66,14 @@ var picArray = [
 ];
 
 var fillGrid = function() {
-    $('#grid').css('opacity', 0);
+    // $('#grid').css('opacity', 0);
     var headertitle = $("#header h1")[0].getBoundingClientRect();
     var headersubtitle = $("#header h3")[0].getBoundingClientRect();
     var credits = $("#credits")[0].getBoundingClientRect();
     var notes = $("#notes")[0].getBoundingClientRect();
-    var childItem = $(".child")[0].getBoundingClientRect();
-    var childItemHeight = childItem.height;
-    var childItemWidth = childItem.width;
+    // var childItem = $(".child")[0].getBoundingClientRect();
+    // var childItemHeight = childItem.height;
+    // var childItemWidth = childItem.width;
 
     var gridConteinerHeight;
     if(window.innerWidth > 800){
@@ -94,7 +94,7 @@ var fillGrid = function() {
 
 $( document ).ready(function() {
     if(screen.width > 750){
-        fillGrid();
+        setTimeout(fillGrid, 2000)
     }
 
 });
