@@ -66,7 +66,6 @@ var picArray = [
 ];
 
 var fillGrid = function() {
-    // $('#grid').css('opacity', 0);
     var headertitle = $("#header h1")[0].getBoundingClientRect();
     var headersubtitle = $("#header h3")[0].getBoundingClientRect();
     var credits = $("#credits")[0].getBoundingClientRect();
