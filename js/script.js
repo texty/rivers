@@ -52,10 +52,9 @@ $(".close").click(function() {
 var instance_d;
 var instance_m;
 const popper_d = document.querySelector('#next-btn');
-if(screen.width > 800) {
     instance_d = tippy(popper_d);
     instance_d.show();
-}
+
 
 
 // desktop слайдер
