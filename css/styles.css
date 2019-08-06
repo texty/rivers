@@ -506,7 +506,7 @@ main {
     main .river div.text-container {
       grid-column: 2/3;
       max-height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.9);
       padding: 20px 5%; }
       @media (max-width: 813px) {
         main .river div.text-container {
