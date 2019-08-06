@@ -155,6 +155,7 @@
 
 /* Created by Texty*/
 #created_texty {
+  color: #78b2ff;
   letter-spacing: 1px;
   display: flex;
   flex-direction: column;
@@ -169,16 +170,16 @@
     cursor: pointer;
     width: 1em;
     height: 1em;
-    border: 1px solid #a6a6a6;
-    color: #a6a6a6;
+    border: 2px solid white;
+    color: white;
     border-radius: 50%;
     padding: 0.5em;
-    font-size: 2.5em;
+    font-size: 2.0em;
     line-height: 1;
     transition: all 0.5s; }
     #created_texty i:hover {
-      border: 1px solid #a6a6a6;
-      color: #262626; }
+      background-color: #78b2ff;
+      color: white; }
   #created_texty img {
     max-height: 4em;
     max-width: 90%;

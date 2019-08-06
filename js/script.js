@@ -46,7 +46,7 @@ var instance_d;
 const popper_d = document.querySelector('#next-btn');
 instance_d = tippy(popper_d);
 
-if(window.innerWidth >= 750 && window.innerHeight > window.innerWidth){
+if(window.innerWidth >= 815) {
     instance_d.show();
 }
 
