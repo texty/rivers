@@ -367,6 +367,7 @@ body {
   cursor: pointer; }
 
 #header {
+  min-height: 100vh;
   padding-bottom: 20px;
   background-color: black;
   min-height: 100vh;
@@ -376,9 +377,8 @@ body {
   grid-template-rows: 50px auto max-content max-content; }
   @media (max-width: 800px) {
     #header {
-      display: block;
-      min-height: 50vh;
-      height: 100vh; } }
+      grid-template-columns: 100%;
+      grid-template-rows: 50px auto max-content max-content max-content max-content; } }
   #header #logo-soc {
     grid-column: 1/-1;
     grid-row: 1/2;
@@ -393,9 +393,6 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden; }
-    @media (max-width: 800px) {
-      #header #grid {
-        height: 50vh; } }
   #header h1 {
     padding: 20px 0;
     text-align: left;
@@ -416,7 +413,8 @@ body {
         margin: 25px auto; } }
     @media (max-width: 800px) {
       #header h1 {
-        margin: 25px auto; } }
+        padding: 20px 0;
+        margin: 0 auto; } }
   #header h3 {
     padding: 20px 0;
     text-align: left;
@@ -428,7 +426,9 @@ body {
     grid-row: 4/5; }
     @media (max-width: 800px) {
       #header h3 {
-        margin: 25px 5% 25px 5%;
+        grid-row: 4/5;
+        padding: 20px 0;
+        margin: 0 5% 0 5%;
         font-size: 17pt; } }
   #header #credits {
     text-align: left;
@@ -440,6 +440,8 @@ body {
     grid-row: 4/5; }
     @media (max-width: 800px) {
       #header #credits {
+        grid-column: 1/-1;
+        grid-row: 5/6;
         font-size: 13pt;
         margin: 25px auto; } }
   #header #notes {
@@ -453,6 +455,8 @@ body {
     grid-row: 4/5; }
     @media (max-width: 800px) {
       #header #notes {
+        grid-row: 6/7;
+        grid-column: 1/-1;
         font-size: 11pt;
         margin: 25px auto; } }
 
@@ -623,14 +627,18 @@ a {
 a:hover {
   color: white; }
 
-#grid {
+#grid, #mob-grid {
   grid-column: 1/-1;
   grid-row: 2/3;
   display: flex;
   flex-wrap: wrap; }
 
-.child {
+.child, .mob-child {
   padding: 0 10px;
-  flex: 1; }
+  flex: 1;
+  width: auto; }
+
+.mob-child {
+  min-width: 150px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -47,14 +47,22 @@ var picArray = [
 var fillGrid = function() {
     var headertitle = $("#header h1")[0].getBoundingClientRect();
     var headersubtitle = $("#header h3")[0].getBoundingClientRect();
+    var credits = $("#credits")[0].getBoundingClientRect();
+    var notes = $("#notes")[0].getBoundingClientRect();
+
     var childItem = $(".child")[0].getBoundingClientRect();
     var childItemHeight = childItem.height;
     var childItemWidth = childItem.width;
     console.log(childItemHeight);
     console.log(childItemWidth);
 
+    var gridConteinerHeight;
+    if(window.innerWidth > 800){
+        gridConteinerHeight = window.innerHeight - headertitle.height - headersubtitle.height - 100;
+    } else {
+        gridConteinerHeight = window.innerHeight - headertitle.height - headersubtitle.height - credits.height - notes.height - 200;
+    }
 
-    var gridConteinerHeight = window.innerHeight - headertitle.height - headersubtitle.height - 50;
     var gridConteinerWidth = window.innerWidth;
 
     console.log(gridConteinerHeight);
@@ -71,4 +79,38 @@ var fillGrid = function() {
 fillGrid();
 
 
-$( window ).resize(fillGrid);
+$(window).resize(fillGrid);
+
+
+var fillMobGrid = function() {
+    var headertitle = $(".mobHeader h1")[0].getBoundingClientRect();
+    var headersubtitle = $(".mobHeader h3")[0].getBoundingClientRect();
+    var mobCredits = $(".mobCredits")[0].getBoundingClientRect();
+    var mobNotes = $(".mobNotes")[0].getBoundingClientRect();
+
+    var childItem = $(".mob-child")[0].getBoundingClientRect();
+    var childItemHeight = childItem.height;
+    var childItemWidth = childItem.width;
+    console.log(childItemHeight);
+    console.log(childItemWidth);
+
+    var gridConteinerHeight  = window.innerHeight - headertitle.height - headersubtitle.height - mobCredits.height - mobNotes.height - 50;
+
+    var gridConteinerWidth = window.innerWidth;
+
+    console.log(gridConteinerHeight);
+    var pictureRows =  (gridConteinerHeight / childItemHeight).toFixed(0);
+    var pictureColumns =  (gridConteinerWidth / childItemWidth).toFixed(0);
+
+    var picAmount = (pictureRows * pictureColumns).toFixed(0);
+
+    var gridContent = picArray.slice(0, picAmount);
+    console.log(gridContent);
+    $('#mob-grid').html(gridContent);
+};
+
+fillGrid();
+
+fillMobGrid();
+$(window).resize(fillGrid);
+$(window).resize(fillMobGrid);

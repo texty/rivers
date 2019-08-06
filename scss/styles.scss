@@ -112,6 +112,7 @@ body {
 
 
 #header {
+  min-height:100vh;
   padding-bottom:20px;
   background-color: black;
   min-height:100vh;
@@ -119,11 +120,9 @@ body {
   display:grid;
   grid-template-columns: 50% 30% 20%;
   grid-template-rows: 50px auto max-content max-content;
-
   @media (max-width:800px) {
-    display: block;
-    min-height:50vh;
-    height:100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px auto max-content max-content max-content max-content;
   }
 
   #logo-soc {
@@ -143,10 +142,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    @media (max-width:800px) {
-      height:50vh;
-    }
-  }
+   }
 
   h1 {
     padding:20px 0;
@@ -167,7 +163,8 @@ body {
       margin: 25px auto;
     }
     @media (max-width:800px) {
-      margin: 25px auto;
+      padding:20px 0;
+      margin: 0 auto;
     }
   }
 
@@ -181,7 +178,9 @@ body {
     grid-column: 1/2;
     grid-row:4/5;
     @media (max-width:800px) {
-      margin: 25px 5% 25px 5%;
+      grid-row:4/5;
+      padding:20px 0;
+      margin: 0 5% 0 5%;
       font-size:17pt;
     }
   }
@@ -195,6 +194,8 @@ body {
     grid-column: 2/3;
     grid-row:4/5;
     @media (max-width:800px) {
+      grid-column: 1/-1;
+      grid-row:5/6;
       font-size:13pt;
       margin: 25px auto;
     }
@@ -210,6 +211,8 @@ body {
     grid-column: 3/4;
     grid-row:4/5;
     @media (max-width:800px) {
+      grid-row:6/7;
+      grid-column: 1/-1;
       font-size:11pt;
       margin: 25px auto;
     }
@@ -438,17 +441,23 @@ a:hover {
 }
 
 
-#grid {
+#grid, #mob-grid {
   grid-column:1/-1;
   grid-row:2/3;
   display: flex;
   flex-wrap: wrap;
 }
 
-.child {
+.child, .mob-child {
   padding:0 10px;
   flex: 1;
+  width:auto;
   //min-width: 200px;
+}
+
+.mob-child {
+  min-width: 150px;
+
 }
 
 @media (max-width: 700px) {
