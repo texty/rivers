@@ -59,13 +59,14 @@ var fillGrid = function() {
     } else {
         gridConteinerHeight = window.innerHeight - headertitle.height - headersubtitle.height - credits.height - notes.height - 200;
     }
-    
+
     var gridConteinerWidth = window.innerWidth;
     var pictureRows =  (gridConteinerHeight / childItemHeight).toFixed(0);
     var pictureColumns =  (gridConteinerWidth / childItemWidth).toFixed(0);
     var picAmount = (pictureRows * pictureColumns).toFixed(0);
     var gridContent = picArray.slice(0, picAmount);
     $('#grid').html(gridContent);
+    $('#grid').css('opacity', 1);
 };
 
 fillGrid();
