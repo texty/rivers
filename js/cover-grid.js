@@ -91,13 +91,13 @@ var fillGrid = function() {
     $('#grid').css('opacity', 1);
 };
 
-
-$( document ).ready(function() {
-    if(screen.width > 750){
-        setTimeout(fillGrid, 2000)
-    }
-
-});
+//
+// $( document ).ready(function() {
+//     if(screen.width > 750){
+//         setTimeout(fillGrid, 2000)
+//     }
+//
+// });
 
 
 $(window).resize(fillGrid);
