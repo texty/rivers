@@ -637,7 +637,7 @@ a:hover {
 .child, .mob-child {
   padding: 0 10px;
   flex: 1;
-  width: auto; }
+  width: 200px; }
 
 .mob-child {
   min-width: 150px; }
