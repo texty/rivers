@@ -294,39 +294,41 @@ main {
         }
       }
 
-      .popup {
-        margin-top: 25px;
-        font-size:14pt;
-        letter-spacing: 5px;
-        color:white;
-        cursor: pointer;
-      }
 
-      .popup:hover {
-        font-weight: 800;
-      }
-
-      .show-map {
-        text-align: left;
-        margin-left: 0;
-        width: max-content;
-        color:white;
-        margin-top: 25px;
-        font-size:14pt;
-        letter-spacing: 5px;
-        padding-bottom: 2px;
-        text-decoration: none;
-        border-bottom: 1px solid white;
-        cursor: pointer;
-      }
-
-      .show-map:hover {
-        color: #78b2ff;
-        border-bottom: 1px solid #78b2ff;
-      }
     }
 
   }
+}
+
+.popup {
+  margin-top: 25px;
+  font-size:14pt;
+  letter-spacing: 5px;
+  color:white;
+  cursor: pointer;
+}
+
+.popup:hover {
+  color: deeppink;
+}
+
+.show-map {
+  text-align: left;
+  margin-left: 0;
+  width: max-content;
+  color:white;
+  margin-top: 25px;
+  font-size:14pt;
+  letter-spacing: 5px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.show-map:hover {
+  color: deeppink;
+  border-bottom: 1px solid deeppink;
 }
 
 
@@ -454,6 +456,10 @@ main {
 }
 
 hr {
+
+  border: none; /* Убираем границу для браузера Firefox */
+  background-color: white; /* Цвет линии для браузера Firefox и Opera */
+  height: 2px; /* Толщина линии */
   color:#78b2ff;
   margin-bottom:50px;
 }
