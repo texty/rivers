@@ -537,6 +537,9 @@ main {
         text-decoration: none;
         border-bottom: 1px solid white;
         cursor: pointer; }
+      main .river div#text-container .show-map:hover {
+        color: #78b2ff;
+        border-bottom: 1px solid #78b2ff; }
 
 #block-for-slider {
   width: 100%;
