@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Smartphones (portrait and landscape) ----------- */
 /* Smartphones (landscape) ----------- */
 /* Smartphones (portrait) ----------- */
@@ -65,9 +66,6 @@
 /* Large screens ----------- */
 #logo-soc {
   width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
   justify-content: space-between; }
 
@@ -289,6 +287,30 @@ body {
   font-family: 'Fira Mono', monospace;
   margin: 0;
   padding: 0; }
+  @media (max-width: 850px) and (orientation: landscape) {
+    body {
+      background-color: black; } }
+  @media (max-width: 500px) and (orientation: portrait) {
+    body {
+      background-color: black; } }
+
+.desk {
+  display: block; }
+  @media (max-width: 850px) and (orientation: landscape) {
+    .desk {
+      display: none; } }
+  @media (max-width: 500px) and (orientation: portrait) {
+    .desk {
+      display: none; } }
+
+.mob {
+  display: none; }
+  @media (max-width: 850px) and (orientation: landscape) {
+    .mob {
+      display: block; } }
+  @media (max-width: 500px) and (orientation: portrait) {
+    .mob {
+      display: block; } }
 
 .modal {
   display: none;
@@ -303,6 +325,8 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   transform: scaleY(0.01) scaleX(0);
   animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+  .modal #img01 {
+    margin: auto; }
   .modal #next {
     cursor: pointer;
     position: absolute;
@@ -348,15 +372,20 @@ body {
   color: #78b2ff;
   display: grid;
   grid-template-columns: 50% 30% 20%;
-  grid-template-rows: auto auto auto; }
+  grid-template-rows: 20px 65% auto auto; }
   @media (max-width: 800px) {
     #header {
       display: block;
       min-height: 50vh; } }
+  #header #logo-soc {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    z-index: 10000; }
   #header #cover {
     width: 100%;
+    height: 100%;
     grid-column: 1/-1;
-    grid-row: 1/2; }
+    grid-row: 2/3; }
   #header h1 {
     text-align: left;
     width: 90%;
@@ -365,7 +394,7 @@ body {
     font-size: 50pt;
     font-weight: normal;
     grid-column: 1/2;
-    grid-row: 2/3; }
+    grid-row: 3/4; }
     @media (max-width: 1300px) {
       #header h1 {
         font-size: 40pt;
@@ -384,10 +413,11 @@ body {
     font-size: 20pt;
     font-weight: normal;
     grid-column: 1/2;
-    grid-row: 3/4; }
+    grid-row: 4/5; }
     @media (max-width: 800px) {
       #header h3 {
-        margin: 25px 5% 25px 5%; } }
+        margin: 25px 5% 25px 5%;
+        font-size: 17pt; } }
   #header #credits {
     text-align: left;
     width: 90%;
@@ -395,7 +425,7 @@ body {
     font-size: 16pt;
     font-weight: normal;
     grid-column: 2/3;
-    grid-row: 3/4; }
+    grid-row: 4/5; }
     @media (max-width: 800px) {
       #header #credits {
         font-size: 13pt;
@@ -408,7 +438,7 @@ body {
     font-weight: normal;
     line-height: 1.5;
     grid-column: 3/4;
-    grid-row: 3/4; }
+    grid-row: 4/5; }
     @media (max-width: 800px) {
       #header #notes {
         font-size: 11pt;
@@ -557,5 +587,20 @@ main {
 
 #prev-btn {
   display: none; }
+
+/* мобільна */
+.mob-pic {
+  height: auto;
+  width: 100%; }
+
+.text-container {
+  color: #78b2ff;
+  max-height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 5%; }
+
+hr {
+  color: #78b2ff;
+  margin-bottom: 50px; }
 
 /*# sourceMappingURL=styles.css.map */
