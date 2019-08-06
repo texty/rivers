@@ -669,36 +669,4 @@ a {
 a:hover {
   color: white; }
 
-.social-icons-inside-slide {
-  width: max-content;
-  background-color: black;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 5px; }
-  .social-icons-inside-slide a {
-    margin: auto;
-    text-decoration: none; }
-  .social-icons-inside-slide a span {
-    border-bottom: 1px dashed black;
-    font-weight: 800;
-    font-size: 20px;
-    letter-spacing: 1px;
-    color: black !important;
-    background-color: rgba(225, 225, 225, 0.7); }
-    @media screen and (min-width: 1824px) {
-      .social-icons-inside-slide a span {
-        font-size: 14px; } }
-  .social-icons-inside-slide i {
-    font-size: 35px;
-    color: #78b2ff;
-    margin: 10px;
-    max-height: 1em;
-    transition: all 0.5s; }
-    @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-      .social-icons-inside-slide i {
-        font-size: 20px; } }
-
 /*# sourceMappingURL=styles.css.map */
