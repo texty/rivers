@@ -145,15 +145,12 @@ body {
 
   #grid {
     background-image: url(../img/cover1.jpg);
-    background-position: 50% 50%;
+    background-position: 50% 55%;
     background-size: cover;
     height:100%;
     grid-column: 1/-1;
     grid-row:2/3;
-    //display: grid;
-    //grid-template-columns: repeat(auto-fill, 200px);
-    //grid-gap: 1.5rem;
-   }
+  }
 
   .child {
     padding:0 20px 0 0;
@@ -192,9 +189,10 @@ body {
   h3 {
     padding:0;
     text-align: left;
-    width:80%;
+    width:90%;
     margin: 5px 15% 5px 0;
-    font-size:15pt;
+    font-size:16pt;
+    line-height: 1.5;
     font-weight: normal;
     grid-column: 2/3;
     grid-row:4/5;
