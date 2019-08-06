@@ -83,8 +83,8 @@ var fillGrid = function() {
     }
 
     var gridConteinerWidth = window.innerWidth;
-    var pictureRows =  (gridConteinerHeight / childItemHeight).toFixed(0);
-    var pictureColumns =  (gridConteinerWidth / childItemWidth).toFixed(0);
+    var pictureRows =  (gridConteinerHeight / 126).toFixed(0);
+    var pictureColumns =  (gridConteinerWidth / 328).toFixed(0);
     var picAmount = (pictureRows * pictureColumns).toFixed(0);
     var gridContent = picArray.slice(0, picAmount);
     $('#grid').html(gridContent);

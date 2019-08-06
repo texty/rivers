@@ -155,6 +155,10 @@ body {
     //grid-gap: 1.5rem;
    }
 
+  .child {
+    padding:0 20px 0 0;
+  }
+
   #cover {
     grid-column: 1/-1;
     grid-row:2/3;
@@ -458,36 +462,4 @@ a {
 a:hover {
   color:white;
 }
-
-
-#grid, #mob-grid {
-  grid-column:1/-1;
-  grid-row:2/3;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.child, .mob-child {
-  padding:0 10px;
-  flex: 1;
-  width: 250px;
-}
-
-.mob-child {
-  width: 200px;
-
-}
-
-@media (max-width: 700px) {
-  //.child {
-  //  min-width: 33.33%;
-  //}
-}
-
-@media (max-width: 400px) {
-  //.child {
-  //  min-width: 50%;
-  //}
-}
-
 
