@@ -655,11 +655,8 @@ main {
 
 hr {
   border: none;
-  /* Убираем границу для браузера Firefox */
   background-color: white;
-  /* Цвет линии для браузера Firefox и Opera */
   height: 2px;
-  /* Толщина линии */
   color: #78b2ff;
   margin-bottom: 50px; }
 

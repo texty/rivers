@@ -464,10 +464,9 @@ main {
 }
 
 hr {
-
-  border: none; /* Убираем границу для браузера Firefox */
-  background-color: white; /* Цвет линии для браузера Firefox и Opera */
-  height: 2px; /* Толщина линии */
+  border: none;
+  background-color: white;
+  height: 2px;
   color:#78b2ff;
   margin-bottom:50px;
 }
