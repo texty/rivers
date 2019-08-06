@@ -88,7 +88,7 @@ $(document).keydown(function(e) {
                 $("#prev-btn").css("display", "none")
             }
 
-            if(slideNow != 19) {
+            if(slideNow != 22) {
                 $("#next-btn").css("display", "block")
             } else {
                 $("#next-btn").css("display", "none")
@@ -108,7 +108,7 @@ $(document).keydown(function(e) {
                 $("#prev-btn").css("display", "none")
             }
 
-            if(slideNow != 19) {
+            if(slideNow != 22) {
                 $("#next-btn").css("display", "block")
             } else {
                 $("#next-btn").css("display", "none")
@@ -136,7 +136,7 @@ $(document).ready(function() {
             $("#prev-btn").css("display", "none")
         }
 
-        if(slideNow != 21) {
+        if(slideNow != 22) {
             $("#next-btn").css("display", "block")
         } else {
             $("#next-btn").css("display", "none")
@@ -151,7 +151,7 @@ $(document).ready(function() {
             $("#prev-btn").css("display", "none")
         }
 
-        if(slideNow != 21) {
+        if(slideNow != 22) {
             $("#next-btn").css("display", "block")
         } else {
             $("#next-btn").css("display", "none")
