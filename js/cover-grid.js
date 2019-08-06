@@ -2,7 +2,7 @@
  * Created by yevheniia on 06.08.19.
  */
 
-function preloadImage(url)
+function preloadImage()
 {
     var img1 = new Image();
     img1.src = "img/covers/01.png";
@@ -64,6 +64,8 @@ function preloadImage(url)
     var img20 = new Image();
     img20.src = "img/covers/20.png";
 }
+
+preloadImage()
 
 var picArray = [
     '<img class="child" src="img/covers/01.png"/>',
