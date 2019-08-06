@@ -144,10 +144,10 @@ body {
   }
 
   #grid {
-    //opacity:0;
-    width:100%;
-    margin:auto;
-    //height:50vh;
+    background-image: url(../img/cover1.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height:100%;
     grid-column: 1/-1;
     grid-row:2/3;
     //display: grid;

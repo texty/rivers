@@ -394,8 +394,10 @@ body {
     grid-row: 1/2;
     z-index: 10000; }
   #header #grid {
-    width: 100%;
-    margin: auto;
+    background-image: url(../img/cover1.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100%;
     grid-column: 1/-1;
     grid-row: 2/3; }
   #header .child {

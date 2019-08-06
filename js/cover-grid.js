@@ -92,7 +92,7 @@ var fillGrid = function() {
     setTimeout(function(){
         $('#grid').css('opacity', 1);
 
-    }, 1500)
+    }, 2000)
 };
 
 //
