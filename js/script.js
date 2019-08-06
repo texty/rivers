@@ -15,21 +15,16 @@ $('.popup').click(function() {
 
     $('#next').click(function() {
         index = index + 1;
-
         var nextSlise = slideArray[index];
         var newSrc = $(nextSlise).attr("rsrc");
-
         if(index < slideArray.length) {
             modalImg.attr("src", newSrc);
         }
-
-
         if(index === slideArray.length) {
             index = 0;
             modalImg.attr("src", $(slideArray[index]).attr("rsrc"));
         }
     });
-
 
     $('#myModal').css("display","flex");
 
@@ -37,7 +32,6 @@ $('.popup').click(function() {
 
 var span = $("#close");
 
-// When the user clicks on <span> (x), close the modal
 $(".close").click(function() {
     $('#myModal').css("display","none");
 });
@@ -50,10 +44,12 @@ $(".close").click(function() {
 // tippy "Гортайте слайдер" версія екрани
 var instance_d;
 const popper_d = document.querySelector('#next-btn');
-if(window.innerWidth > 813){
-    instance_d = tippy(popper_d);
+instance_d = tippy(popper_d);
+
+if(window.innerWidth >= 750 && window.innerHeight > window.innerWidth){
     instance_d.show();
 }
+
 
 
 
@@ -61,8 +57,6 @@ if(window.innerWidth > 813){
 // desktop слайдер
 var slideNow = 1;
 var slideCount = $('#slidewrapper').children().length;
-var slideInterval = 5000;
-var navBtnId = 0;
 var translateWidth = 0;
 
 

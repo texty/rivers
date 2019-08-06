@@ -9,6 +9,7 @@
 }
 
 body {
+  background-color: black;
   font-family: 'Fira Mono', monospace;
   margin:0;
   padding:0;
@@ -35,7 +36,7 @@ body {
 
 .desk {
   display:block;
-  @media(max-width:815px) and (orientation:landscape){
+  @media(max-width:813px) and (orientation:landscape){
     display:none;
   }
   @media(max-width:500px) and (orientation:portrait){
@@ -45,7 +46,7 @@ body {
 
 .mob {
   display:none;
-  @media(max-width:815px) and (orientation:landscape){
+  @media(max-width:813px) and (orientation:landscape){
     display:block;
   }
   @media(max-width:500px) and (orientation:portrait){
@@ -477,5 +478,44 @@ a {
 
 a:hover {
   color:white;
+}
+
+.social-icons-inside-slide {
+  width:max-content;
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+
+  a {
+    margin: auto;
+    text-decoration: none;
+  }
+
+  a span {
+    border-bottom: 1px dashed black;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black !important;
+    background-color: rgba(225, 225, 225, 0.7);
+    @media #{$large}{
+      font-size: 14px;
+    }
+  }
+
+  i {
+    font-size: 35px;
+    color: #78b2ff;
+    margin: 10px;
+    max-height: 1em;
+    transition: all 0.5s;
+    @media #{$mobile} {
+      font-size: 20px;
+    }
+  }
 }
 

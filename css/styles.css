@@ -66,7 +66,10 @@
 /* Large screens ----------- */
 #logo-soc {
   width: 80vw;
-  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto 10vw;
   display: flex;
   justify-content: space-between; }
 
@@ -85,17 +88,17 @@
     .logo a img {
       margin: auto; }
 
-#soc {
+.soc {
   z-index: 10000;
   display: flex;
   justify-content: flex-end;
   margin-right: 20px; }
-  #soc div#translate {
+  .soc div#translate {
     display: flex; }
-  #soc a {
+  .soc a {
     margin: auto;
     text-decoration: none; }
-  #soc a span {
+  .soc a span {
     border-bottom: 1px dashed black;
     margin-right: 20px;
     font-weight: 800;
@@ -104,18 +107,18 @@
     color: black !important;
     background-color: rgba(225, 225, 225, 0.7); }
     @media screen and (min-width: 1824px) {
-      #soc a span {
+      .soc a span {
         font-size: 14px; } }
-  #soc i {
+  .soc i {
     font-size: 35px;
     color: #78b2ff;
     margin: 0 0 0 0.5em;
     max-height: 1em;
     transition: all 0.5s; }
     @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-      #soc i {
+      .soc i {
         font-size: 20px; } }
-    #soc i:hover {
+    .soc i:hover {
       color: pink; }
 
 #cover-picture {
@@ -284,6 +287,7 @@
   outline: none; }
 
 body {
+  background-color: black;
   font-family: 'Fira Mono', monospace;
   margin: 0;
   padding: 0; }
@@ -307,7 +311,7 @@ body {
 
 .desk {
   display: block; }
-  @media (max-width: 815px) and (orientation: landscape) {
+  @media (max-width: 813px) and (orientation: landscape) {
     .desk {
       display: none; } }
   @media (max-width: 500px) and (orientation: portrait) {
@@ -316,7 +320,7 @@ body {
 
 .mob {
   display: none; }
-  @media (max-width: 815px) and (orientation: landscape) {
+  @media (max-width: 813px) and (orientation: landscape) {
     .mob {
       display: block; } }
   @media (max-width: 500px) and (orientation: portrait) {
@@ -664,5 +668,37 @@ a {
 
 a:hover {
   color: white; }
+
+.social-icons-inside-slide {
+  width: max-content;
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px; }
+  .social-icons-inside-slide a {
+    margin: auto;
+    text-decoration: none; }
+  .social-icons-inside-slide a span {
+    border-bottom: 1px dashed black;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black !important;
+    background-color: rgba(225, 225, 225, 0.7); }
+    @media screen and (min-width: 1824px) {
+      .social-icons-inside-slide a span {
+        font-size: 14px; } }
+  .social-icons-inside-slide i {
+    font-size: 35px;
+    color: #78b2ff;
+    margin: 10px;
+    max-height: 1em;
+    transition: all 0.5s; }
+    @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      .social-icons-inside-slide i {
+        font-size: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */
