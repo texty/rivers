@@ -49,9 +49,8 @@ $(".close").click(function() {
 /*---слайдер -----*/
 // tippy "Гортайте слайдер" версія екрани
 var instance_d;
-var instance_m;
 const popper_d = document.querySelector('#next-btn');
-if(screen.width > 750){
+if(window.innerWidth > 813){
     instance_d = tippy(popper_d);
     instance_d.show();
 }
@@ -65,17 +64,6 @@ var slideCount = $('#slidewrapper').children().length;
 var slideInterval = 5000;
 var navBtnId = 0;
 var translateWidth = 0;
-
-//вираховуємо місце лінку на зображенні для десктопів
-// var imgW = $('#slidewrapper .slide img').width(); //ширина одного слайду
-// var imgH = $('#slidewrapper .slide img').height(); //висота одного слайду
-// var imageBoundaries =   $('#slidewrapper .slide img')[0].getBoundingClientRect();
-// var leftP_6 = (imgW /100) * 7.7;   //вирахований % початку лінка
-// var rightP_6 = (imgW /100) * 27.4; //вирахований % кінця для 4 слайду
-// var rightP_7 = (imgW /100) * 49.3; //вирахований % кінця для 5 слайду
-// var bottomP = (imgH /100) * 94.5;
-// var expl_6Len = (imgW/100) * 19.7; //ширина, кінець - початок у % до ширини зображення
-// var expl_7Len = (imgW/100) * 41.6;
 
 
 //  гортання стрілками
