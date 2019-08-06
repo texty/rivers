@@ -1,6 +1,70 @@
 /**
  * Created by yevheniia on 06.08.19.
  */
+
+function preloadImage(url)
+{
+    var img1 = new Image();
+    img1.src = "img/covers/01.png";
+
+    var img2 = new Image();
+    img2.src = "img/covers/02.png";
+
+    var img3 = new Image();
+    img3.src = "img/covers/03.png";
+
+    var img4 = new Image();
+    img4.src = "img/covers/04.png";
+
+    var img5 = new Image();
+    img5.src = "img/covers/05.png";
+
+    var img6 = new Image();
+    img6.src = "img/covers/06.png";
+
+    var img7 = new Image();
+    img7.src = "img/covers/07.png";
+
+    var img8 = new Image();
+    img8.src = "img/covers/08.png";
+
+    var img9 = new Image();
+    img9.src = "img/covers/09.png";
+
+    var img10 = new Image();
+    img10.src = "img/covers/10.png";
+
+    var img11 = new Image();
+    img11.src = "img/covers/11.png";
+
+    var img12 = new Image();
+    img12.src = "img/covers/12.png";
+
+    var img13 = new Image();
+    img13.src = "img/covers/13.png";
+
+    var img14 = new Image();
+    img14.src = "img/covers/14.png";
+
+    var img15 = new Image();
+    img15.src = "img/covers/15.png";
+
+    var img16 = new Image();
+    img16.src = "img/covers/16.png";
+
+    var img17 = new Image();
+    img17.src = "img/covers/17.png";
+
+    var img18 = new Image();
+    img18.src = "img/covers/18.png";
+
+    var img19 = new Image();
+    img19.src = "img/covers/19.png";
+
+    var img20 = new Image();
+    img20.src = "img/covers/20.png";
+}
+
 var picArray = [
     '<img class="child" src="img/covers/01.png"/>',
     '<img class="child" src="img/covers/02.png"/>',
@@ -94,7 +158,7 @@ var fillGrid = function() {
 $( document ).ready(function() {
     if(screen.width > 750){
         fillGrid();
-    } 
+    }
 
 });
 
