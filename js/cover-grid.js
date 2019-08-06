@@ -90,10 +90,10 @@ var fillGrid = function() {
     $('#grid').css('opacity', 1);
 };
 
+if(screen.width > 800)
 $( document ).ready(function() {
     fillGrid();
 });
-
 
 
 $(window).resize(fillGrid);
@@ -117,7 +117,5 @@ var fillMobGrid = function() {
 };
 
 
-fillGrid();
-fillMobGrid();
 $(window).resize(fillGrid);
 $(window).resize(fillMobGrid);
