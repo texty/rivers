@@ -70,7 +70,10 @@ var fillGrid = function() {
     $('#grid').css('opacity', 1);
 };
 
-fillGrid();
+$( document ).ready(function() {
+    fillGrid();
+});
+
 
 
 $(window).resize(fillGrid);
