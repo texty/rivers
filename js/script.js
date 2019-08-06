@@ -8,7 +8,6 @@ var modalImg = $("#img01");
 $('.popup').click(function() {
     var theClass = $(this).closest(".slide")[0];
     var slideArray = $('.slide');
-    console.log(slideArray.length)
     var index = $(slideArray).index(theClass);
     var src = $(theClass).attr("rsrc");
     modalImg.attr("src", src);
@@ -52,8 +51,11 @@ $(".close").click(function() {
 var instance_d;
 var instance_m;
 const popper_d = document.querySelector('#next-btn');
+if(screen.width > 750){
     instance_d = tippy(popper_d);
     instance_d.show();
+}
+
 
 
 

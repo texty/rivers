@@ -72,7 +72,7 @@
 
 .logo {
   height: 50px;
-  width: 200px; }
+  width: 150px; }
   @media screen and (min-width: 1824px) {
     .logo {
       width: 150px; } }
@@ -398,12 +398,10 @@ body {
     width: 100%;
     margin: auto;
     grid-column: 1/-1;
-    grid-row: 2/3;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; }
+    grid-row: 2/3; }
+  #header #cover {
+    grid-column: 1/-1;
+    grid-row: 2/3; }
   #header h1 {
     padding: 20px 0;
     text-align: left;
@@ -432,7 +430,7 @@ body {
     text-align: left;
     width: 80%;
     margin: 5px 15% 5px 0;
-    font-size: 16pt;
+    font-size: 15pt;
     font-weight: normal;
     grid-column: 2/3;
     grid-row: 4/5; }
@@ -445,10 +443,11 @@ body {
         font-size: 17pt; } }
   #header #credits {
     text-align: left;
-    width: 100%;
+    width: 90%;
     margin: 0;
-    font-size: 15pt;
+    font-size: 13pt;
     font-weight: normal;
+    line-height: 1.5;
     grid-column: 3/4;
     grid-row: 4/5; }
     @media (max-width: 800px) {
@@ -456,10 +455,10 @@ body {
         grid-column: 2/-1;
         grid-row: 5/6;
         font-size: 13pt;
-        margin: 25px auto; } }
+        margin: 25px 0; } }
   #header #notes {
     text-align: left;
-    width: 100%;
+    width: 90%;
     margin: 0;
     font-size: 13pt;
     font-weight: normal;
@@ -471,7 +470,7 @@ body {
         grid-row: 6/7;
         grid-column: 2/-1;
         font-size: 11pt;
-        margin: 25px auto; } }
+        margin: 25px 0; } }
 
 main {
   margin: 0; }

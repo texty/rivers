@@ -150,12 +150,15 @@ body {
     //height:50vh;
     grid-column: 1/-1;
     grid-row:2/3;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    //display: grid;
+    //grid-template-columns: repeat(auto-fill, 200px);
+    //grid-gap: 1.5rem;
    }
+
+  #cover {
+    grid-column: 1/-1;
+    grid-row:2/3;
+  }
 
   h1 {
     padding: 20px 0;
@@ -187,7 +190,7 @@ body {
     text-align: left;
     width:80%;
     margin: 5px 15% 5px 0;
-    font-size:16pt;
+    font-size:15pt;
     font-weight: normal;
     grid-column: 2/3;
     grid-row:4/5;
@@ -202,23 +205,24 @@ body {
 
   #credits {
     text-align: left;
-    width:100%;
+    width:90%;
     margin:0;
-    font-size:15pt;
+    font-size:13pt;
     font-weight: normal;
+    line-height: 1.5;
     grid-column: 3/4;
     grid-row:4/5;
     @media (max-width:800px) {
       grid-column: 2/-1;
       grid-row:5/6;
       font-size:13pt;
-      margin: 25px auto;
+      margin: 25px 0;
     }
   }
 
   #notes {
     text-align: left;
-    width:100%;
+    width:90%;
     margin:0;
     font-size:13pt;
     font-weight: normal;
@@ -229,7 +233,7 @@ body {
       grid-row:6/7;
       grid-column: 2/-1;
       font-size:11pt;
-      margin: 25px auto;
+      margin: 25px 0;
     }
   }
 }
