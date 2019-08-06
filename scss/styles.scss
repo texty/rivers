@@ -120,7 +120,7 @@ body {
   grid-template-columns: 10vw auto 25% 20% 10vw;
   grid-template-rows: 50px auto max-content max-content;
   @media (max-width:800px) {
-    grid-template-columns: 50px 100%;
+    grid-template-columns: 10% 90%;
     grid-template-rows: 50px auto max-content max-content max-content max-content;
   }
 

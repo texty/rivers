@@ -376,7 +376,7 @@ body {
   grid-template-rows: 50px auto max-content max-content; }
   @media (max-width: 800px) {
     #header {
-      grid-template-columns: 50px 100%;
+      grid-template-columns: 10% 90%;
       grid-template-rows: 50px auto max-content max-content max-content max-content; } }
   #header #logo-soc {
     grid-column: 1/-1;

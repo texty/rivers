@@ -90,32 +90,34 @@ var fillGrid = function() {
     $('#grid').css('opacity', 1);
 };
 
-if(screen.width > 800)
+
 $( document ).ready(function() {
-    fillGrid();
+    if(screen.width > 750){
+        fillGrid();
+    } 
+
 });
 
 
 $(window).resize(fillGrid);
 
 
-var fillMobGrid = function() {
-    var headertitle = $(".mobHeader h1")[0].getBoundingClientRect();
-    var headersubtitle = $(".mobHeader h3")[0].getBoundingClientRect();
-    var mobCredits = $(".mobCredits")[0].getBoundingClientRect();
-    var mobNotes = $(".mobNotes")[0].getBoundingClientRect();
-    var childItem = $(".mob-child")[0].getBoundingClientRect();
-    var childItemHeight = childItem.height;
-    var childItemWidth = childItem.width;
-    var gridConteinerHeight  = window.innerHeight - headertitle.height - headersubtitle.height - mobCredits.height - mobNotes.height - 50;
-    var gridConteinerWidth = window.innerWidth;
-    var pictureRows =  (gridConteinerHeight / childItemHeight).toFixed(0);
-    var pictureColumns =  (gridConteinerWidth / childItemWidth).toFixed(0);
-    var picAmount = (pictureRows * pictureColumns).toFixed(0);
-    var gridContent = picArray.slice(0, picAmount);
-    $('#mob-grid').html(gridContent);
-};
+// var fillMobGrid = function() {
+//     var headertitle = $(".mobHeader h1")[0].getBoundingClientRect();
+//     var headersubtitle = $(".mobHeader h3")[0].getBoundingClientRect();
+//     var mobCredits = $(".mobCredits")[0].getBoundingClientRect();
+//     var mobNotes = $(".mobNotes")[0].getBoundingClientRect();
+//     var childItem = $(".mob-child")[0].getBoundingClientRect();
+//     var childItemHeight = childItem.height;
+//     var childItemWidth = childItem.width;
+//     var gridConteinerHeight  = window.innerHeight - headertitle.height - headersubtitle.height - mobCredits.height - mobNotes.height - 50;
+//     var gridConteinerWidth = window.innerWidth;
+//     var pictureRows =  (gridConteinerHeight / childItemHeight).toFixed(0);
+//     var pictureColumns =  (gridConteinerWidth / childItemWidth).toFixed(0);
+//     var picAmount = (pictureRows * pictureColumns).toFixed(0);
+//     var gridContent = picArray.slice(0, picAmount);
+//     $('#mob-grid').html(gridContent);
+// };
 
 
 $(window).resize(fillGrid);
-$(window).resize(fillMobGrid);
