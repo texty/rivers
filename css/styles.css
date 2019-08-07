@@ -579,15 +579,13 @@ main {
 
 #slidewrapper {
   position: relative;
+  width: calc(100% * 22);
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
   -webkit-transition-timing-function: cubic-bezier(0.67, 0.01, 0.23, 1);
   -o-transition-timing-function: cubic-bezier(0.67, 0.01, 0.23, 1);
   transition-timing-function: cubic-bezier(0.67, 0.01, 0.23, 1); }
-
-#slidewrapper {
-  width: calc(100% * 22); }
 
 #slidewrapper, #slidewrapper ul, #slidewrapper li {
   margin: 0;

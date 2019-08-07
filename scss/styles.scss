@@ -362,16 +362,13 @@ main {
 
 #slidewrapper {
   position: relative;
-  //width: calc(100% * 18);
+  width: calc(100% * 22);
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
   -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
   -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
   transition-timing-function: cubic-bezier(.67,.01,.23,1);
-}
-#slidewrapper {
-  width: calc(100% * 22);
 }
 
 

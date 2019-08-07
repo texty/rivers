@@ -215,5 +215,13 @@ $("#range").on("change", function(){
 });
 
 
+$( window ).on("resize", function(){
+    translateWidth = -$('#viewport').width() * (slideNow);
+    $('#slidewrapper').css({
+        'transform': 'translate(' + translateWidth + 'px, 0)',
+        '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
+        '-ms-transform': 'translate(' + translateWidth + 'px, 0)'
+    });
+});
 
 
