@@ -252,7 +252,7 @@ main {
     height:100vh;
     color: #78b2ff;
     display:grid;
-    grid-template-columns: 60% 30%;
+    grid-template-columns: 55% 35%;
     @media (max-width:1400px) {
       grid-template-columns: 50% 45%;
     }
@@ -480,3 +480,13 @@ a:hover {
 }
 
 
+/*--- range slider ---*/
+
+#sliderContainer{
+  width:80vw;
+  margin:0 10vw;
+  color:white;
+}
+input[type="range"]{
+  width:100%;
+}

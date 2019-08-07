@@ -64,6 +64,8 @@ var translateWidth = 0;
 $(document).keydown(function(e) {
     switch(e.which) {
         case 37:
+            $("#range").val(slideNow);
+
             prevSlide();
             if(slideNow != 1) {
                 $("#prev-btn").css("display", "block")
@@ -81,6 +83,7 @@ $(document).keydown(function(e) {
 
         case 39:
             instance_d.destroy();
+            $("#range").val(slideNow);
 
             nextSlide();
 
@@ -111,6 +114,7 @@ $(document).ready(function() {
     $('#next-btn').click(function() {
         //прибираємо тултіп "Гортейте, після першого кліку на стрілку
         instance_d.destroy();
+        $("#range").val(slideNow);
         nextSlide();
         //повертаємо стрілку "назад", якщо не перший слайд
         if(slideNow != 1) {
@@ -129,6 +133,7 @@ $(document).ready(function() {
     });
 
     $('#prev-btn').click(function() {
+        $("#range").val(slideNow);
         prevSlide();
         if(slideNow != 1) {
             $("#prev-btn").css("display", "block")
@@ -146,12 +151,14 @@ $(document).ready(function() {
 
 });
 
+/*-- функції гортання вперед і назад --*/
 
 
 function nextSlide() {
     if (slideNow == slideCount || slideNow <= 0 || slideNow > slideCount) {
         $('#slidewrapper').css('transform', 'translate(0, 0)');
         slideNow = 1;
+        $("#range").val(0);
     } else {
         translateWidth = -$('#viewport').width() * (slideNow);
         $('#slidewrapper').css({
@@ -171,7 +178,9 @@ function prevSlide() {
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
             '-ms-transform': 'translate(' + translateWidth + 'px, 0)'
         });
+        $("#range").val(slideCount);
         slideNow = slideCount;
+
     } else {
         translateWidth = -$('#viewport').width() * (slideNow - 2);
         $('#slidewrapper').css({
@@ -180,8 +189,31 @@ function prevSlide() {
             '-ms-transform': 'translate(' + translateWidth + 'px, 0)'
         });
         slideNow--;
+        $("#range").val(slideNow-1);
+
     }
 }
+
+
+/*-- input range behavior --*/
+
+$("#range").on("change", function(){   
+    slideNow = $("#range").val();
+    console.log(slideNow);
+    nextSlide();
+    if(slideNow === 1) {
+        $("#prev-btn").css("display", "none")
+    } else {
+        $("#prev-btn").css("display", "block")
+    }
+
+    if(slideNow === 22) {
+        $("#next-btn").css("display", "none")
+    } else {
+        $("#next-btn").css("display", "block")
+    }
+});
+
 
 
 
