@@ -152,6 +152,7 @@
       .read-more #read-more-items {
         display: block; } }
     .read-more #read-more-items a img {
+      margin-bottom: 20px;
       width: 100%; }
 
 /* Created by Texty*/

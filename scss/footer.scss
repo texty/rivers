@@ -20,12 +20,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     grid-gap: 20px;
+
     @media #{$mobile}{
       display:block;
     }
 
     a {
       img {
+        margin-bottom: 20px;
         width: 100%;
       }
     }
